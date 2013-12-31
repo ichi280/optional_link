@@ -170,7 +170,7 @@ class OptionalLinkHookHelper extends AppHelper {
 										if ($link) {
 											// <a href="/URL">TEXT</a>
 											//$regex = '/(<a href=[\'|"])(.*?)([\'|"].*</a>)/';
-											$regex = '/href=\"(.+)\"/';
+											$regex = '/href=\"(.+?)\"/';
 											$replacement = 'href="'. $link .'"';
 											if ($strBlank) {
 												$replacement = $replacement . $strBlank;
